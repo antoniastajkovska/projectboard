@@ -24,7 +24,7 @@ services:
     container_name: projectboard-backend
     environment:
       SERVER_PORT: 8080
-      SPRING_DATASOURCE_URL: jdbc:postgresql://host.docker.internal:5432/projectboard
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/projectboard
       SPRING_DATASOURCE_USERNAME: postgres
       SPRING_DATASOURCE_PASSWORD: postgres
       PROJECTBOARD_JWT_SECRET: projectboard-dev-secret-change-this-to-a-long-random-value
